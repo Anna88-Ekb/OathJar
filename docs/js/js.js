@@ -16,13 +16,20 @@ $(document).ready(function(){
             $('.scrollToTop').fadeOut();
         }
     });
-   var windowHeight = $(window).height();
-   console.log(windowHeight);
   //прокручиваем страницы при нажатии на кнопку вверх
   $('.scrollToTop').click(function(event){
     event.preventDefault();
     $('html').animate({
         scrollTop:0
     }, 800);
+  });
+  //карточки
+  $(window).scroll(function(){
+    console.log($(this).scrollTop());
+    if($(this).scrollTop()>1624){
+      $('.wrapper-cards').fadeIn();
+    }  if($(this).scrollTop()<1250) {
+      $('.wrapper-cards').fadeOut();
+  }
   });
 });
