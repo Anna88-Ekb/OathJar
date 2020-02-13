@@ -32,4 +32,12 @@ $(document).ready(function(){
       $('.wrapper-cards').fadeOut();
   }
   });
+  $(window).scroll(function(){
+    console.log($(this).scrollTop());
+    if($(this).scrollTop()>1624){
+      $('.about-toggle_wraper').fadeIn();
+    }  if($(this).scrollTop()<1250) {
+      $('.about-toggle_wraper').fadeOut();
+  }
+  });
 });
