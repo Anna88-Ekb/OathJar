@@ -720,7 +720,6 @@ body {
 }
 .footer__navigation {
   max-width: 650px;
-  /* text-align: right; */
 }
 .footer__logo {
   margin-right: 15px;
@@ -785,7 +784,7 @@ body {
   background-position: center center;
   background-size: 40%;
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); /* повернуть изображение */
+  transform: rotate(180deg); 
 }
 /* MEDIA */
 @media (max-width: 1500px) {
@@ -820,6 +819,8 @@ body {
     max-width: 750px;
     padding-top: 0;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .about-toggle_wraper {
     max-width: 750px;
